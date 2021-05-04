@@ -1,0 +1,310 @@
+#exp_container {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+}
+#con {
+  position: absolute;
+  width: 500px;
+  left: 13px;
+  top: 50px;
+  height:50px;
+}
+#botbox{
+  position:absolute;
+  background-color: white ;
+  width: 850px;
+  height:50px;
+  border: 12px solid green;
+  padding: 50px;
+  margin: 20px;
+  top:650px;
+  left:0px;
+}
+#bt1 {
+  position: absolute;
+  left:10px;
+  top:5px;
+  background-color: #f1f1f1;
+  color: blue;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+#bt2 {
+  position: absolute;
+  left:152px;
+  top:5px;
+  background-color: #f1f1f1;
+  color: blue;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+#bt3 {
+  position: relative;
+  left:271px;
+  top:5px;
+  background-color: #f1f1f1;
+  color: blue;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+#im1 {
+  position: absolute;
+  width: 425px;
+  height: 60px;
+  left:0px;
+  top:0px;  
+}
+#im2{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:15px;
+  top:34px;
+}
+#im3{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:163px;
+  top:34px;
+}
+#im4{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:279px;
+  top:34px;
+
+}
+#v1{
+  position:absolute;
+  height: 900px;
+  width: 10px;
+  left:3px;
+  top:30px;
+  background-color: #555;
+}
+#v2{
+  position:absolute;
+  height: 625px;
+  width: 10px;
+  left:484px;
+  top:30px;
+  background-color: #555;
+}
+#v3{
+  position:absolute;
+  height: 900px;
+  width: 10px;
+  left:1001px;
+  top:30px;
+  background-color: #555;
+}
+#l1{
+  position:absolute;
+  height: 10px;
+  width: 1008px;
+  left:3px;
+  top:30px;
+  background-color: #555;
+}
+#l2{
+  position:absolute;
+  height: 10px;
+  width: 1008px;
+  left:3px;
+  top:645px;
+  background-color: #555;
+}
+#l3{
+  position:absolute;
+  height: 10px;
+  width: 1008px;
+  left:3px;
+  top:920px;
+  background-color: #555;
+}
+#mp{
+  position: absolute;
+  /*left:650px;*/
+  top:825px; 
+  font-size: 33px;
+padding-left:214px;
+
+}
+#myCanvas{
+  position: absolute;
+  left:-134px;
+  top:100px;
+
+}
+#myCanvas2{
+  position: absolute;
+left:54px;
+  top:500px;
+
+}
+#myCanvas3{
+  position: absolute;
+left:144px;
+  top:320px;
+
+}
+#rod{
+position:absolute;
+  height: 320px;
+  width: 3px;
+  left:434px;
+  top:150px;
+  background-color: black;
+}
+#box{
+position:absolute;
+  height: 60px;
+  width: 25px;
+  left:198px;
+  top:295px;
+  background-color: black;
+
+}
+#circle{
+  position:absolute;
+  left:204px;
+  top:304px;
+  height: 10px;
+  width: 10px;
+  background-color: lightgrey;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
+#line{
+position:absolute;
+  height: 85px;
+  width: 3px;
+  left:209px;
+  top:320px;
+  background-color: black;
+}
+#myCanvas4{
+  position: relative;
+  top:300px;
+  left:-44px;
+}
+#thick{
+  position: absolute;
+  left:210px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#breadth{
+  position: absolute;
+  left:220px;
+  top:100px;
+  color:black;
+  background-color: white;
+}
+#load{
+  position: absolute;
+  left:610px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#temp{
+  position: absolute;
+  left:800px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#stress{
+  position: absolute;
+  left:390px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#extension{
+  position: absolute;
+  left:610px;
+  top:100px;
+  color:black;
+  background-color: white;
+}
+#time{
+  position: absolute;
+  left:55px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#pthick{
+  position: absolute;
+  left:295px;
+  top:37px;
+}
+#pbreadth{
+  position: absolute;
+  left:295px;
+  top:87px;
+}
+#pload{
+  position: absolute;
+  left:735px;
+  top:37px;
+}
+#ptemp{
+  position: absolute;
+  left:906px;
+  top:37px;
+}
+#pstress{
+  position: absolute;
+  left:505px;
+  top:37px;
+}
+#pextension{
+  position: absolute;
+  left:696px;
+  top:87px;
+}
+#ptime{
+  position: absolute;
+  left:108px;
+  top:37px;
+}
+#chartContainer{
+  position: absolute;
+  height:500px;
+  width:500px;
+  left:496px;
+  top:125px;
+}
+#invis{
+  position:absolute;
+  height: 30px;
+  width: 30px;
+  left:20px;
+  top:350px;
+  background-color: white;
+}
+#wt{
+  position:absolute;
+  left:380px;
+  top:450px;
+}

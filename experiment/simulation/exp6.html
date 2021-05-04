@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+	<script src="js/exp6.js"></script>
+	<link href="css/exp6.css" rel="stylesheet"/>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script>
+function graph() {
+
+var dps = []; // dataPoints
+var chart = new CanvasJS.Chart("chartContainer", {
+      title :{
+            text: "Extension v/s Time"
+      },
+      axisY: {
+            includeZero: true,
+            title: "Extension (5*10^(-3)mm)"
+      },
+      axisX: {
+            includeZero: true,
+            title: "Time(mins)"
+      },      
+      data: [{
+            type: "line",
+            dataPoints: dps
+      }]
+});
+var j=0;
+var xVal = 0;
+var yVal = 0; 
+var updateInterval = 220;
+//var dataLength = 4;// number of dataPoints visible at any point
+var dp=[{xx:0.0,yy:3},{xx:0.25,yy:203},{xx:0.50,yy:227},{xx:0.75,yy:244},{xx:1.00,yy:258},{xx:1.25,yy:270},{xx:1.50,yy:281},{xx:1.75,yy:294},{xx:2.00,yy:308},{xx:2.25,yy:321},{xx:2.50,yy:340},{xx:2.75,yy:361},{xx:3.00,yy:390},{xx:3.50,yy:450},{xx:4.00,yy:540},{xx:4.25,yy:590},{xx:4.50,yy:641},{xx:4.75,yy:690},{xx:5.00,yy:740},{xx:5.25,yy:800},{xx:5.50,yy:865},{xx:5.75,yy:940},{xx:6.00,yy:1020},{xx:6.25,yy:1120},{xx:6.50,yy:1250},{xx:6.75,yy:1400},{xx:7.0,yy:1675}];
+var updateChart = function () {
+
+      
+      xVal = dp[j].xx;            
+      yVal = dp[j].yy;        
+      dps.push({
+                  x: xVal,
+                  y: yVal
+            });
+      
+
+      if (dps.length > 100) {
+            dps.shift();
+      }
+      if(j<26)
+      {chart.render();
+      j++;}
+};
+
+updateChart();
+setInterval(function(){updateChart()}, updateInterval);
+
+}
+</script>
+</head>
+
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
+  <div id="chartContainer" style="height: 500px; width:500px;"></div> 
+   <canvas height="205" id="myCanvas3" width="55"></canvas>
+   <script>
+      var canvas = document.getElementById('myCanvas3');
+      var context = canvas.getContext('2d');
+     context.beginPath();
+      context.rect(0, 0, 25, 195);
+      context.fillStyle = 'maroon';
+      context.fill();
+      context.stroke();
+   </script>
+  <canvas height="300" id="myCanvas" width="700"></canvas>
+  <script>
+  var m;
+  var l;
+  var a;
+    function strt(){
+      a=0;
+      l=1;
+      m=setInterval(barRot,10);
+      
+    }
+
+   function barRot(){
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      if(a==0){
+        context.translate(345,210);
+        a=-Math.PI/10;
+      }
+     
+      else {
+        if(l<=500){ l++;           
+      context.beginPath(); 
+      context.rotate(a);             
+      context.clearRect(-148,-38,410,69);
+      context.rect(-145, -35, 400, 65);
+      context.fillStyle = 'grey';
+      context.fill();
+      context.beginPath();
+      context.arc(0, 0 , 6, 0, 2 * Math.PI, false);
+      context.closePath();
+      context.fillStyle = 'white';
+      context.fill();      
+      context.beginPath();
+      context.arc(-125, 0 , 6, 0, 2 * Math.PI, false);
+      context.closePath();
+      context.fillStyle = 'black';
+      context.fill();
+      context.beginPath();
+      context.arc(235, 0 , 6, 0, 2 * Math.PI, false);
+      context.closePath();
+      context.fillStyle = 'black';
+      context.fill();
+      //context.clearRect(-146,-36,402,67);
+      //  context.clear();
+      //context.beginPath();
+      a=Math.PI/5000;}
+      else if(l==501)
+      {
+        clearInterval(m); 
+      }
+     }
+     
+}
+   </script>
+   <canvas height="600" id="myCanvas2" width="600"></canvas>
+   <script>   
+      var canvas = document.getElementById('myCanvas2');
+      var context = canvas.getContext('2d');
+      context.beginPath();
+      context.rect(10, 0, 105, 105);
+      context.fillStyle = 'maroon';
+      context.fill();
+      context.stroke();
+      context.beginPath();
+      context.rect(10, 0, 40, 65);
+      context.fillStyle = 'grey';
+      context.fill();
+      context.stroke();
+      context.beginPath();
+      context.arc(30, 35 , 6, 0, 2 * Math.PI, false);
+      context.closePath();
+      context.fillStyle = 'black';
+      context.fill();
+  </script>
+  <canvas height="500" id="myCanvas4" width="500"></canvas>
+  <script>
+    var id1;
+    var x;
+    var y;
+    function modLine()
+      { x=122;
+        y=50;
+        id1=setInterval(mod,15);
+      }
+      function mod()
+      {
+        var c = document.getElementById("myCanvas4");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0,0,500,500);
+        ctx.beginPath();
+        ctx.moveTo(120, 230);
+        ctx.lineTo(x,y);
+        ctx.lineWidth = 2;
+        ctx.stroke();
+       if(y-10<=0.2)
+          {clearInterval(id1);}
+        else{
+        y-=0.1;
+        }
+        //document.getElementById("bt3").innerHTML=y;
+      }
+  </script>
+	<div class="container" id="con">
+  <img id="im1" src="Images/blue.png"/>
+  <button id="bt1" onclick="strt();rodM();modLine();graph()">Restart</button>
+  <button id="bt2" onclick="strt();rodM();modLine();graph()">Start</button>
+  <button id="bt3" onclick="myfun2()">Show-Graph</button>	
+  <img id="im2" src="Images/restart.png"/>
+  <img id="im3" src="Images/start.png"/>
+  <img id="im4" src="Images/show_graph.png"/>
+  <div id="invis"></div>
+
+	</div>
+    <div id="rend">
+   <div id="rod"></div> 
+   <div id="weight"></div>
+  </div>
+  <img id="wt" src="Images/1kg.jpg"/>
+  <div id="rmid">
+   
+   <div id="box"></div> 
+   <div id="circle"></div>
+   <div id="line"></div>
+   <div id="img"></div>
+  </div>
+	<div id="botbox">
+<button id="thick">Thickness</button>
+<button id="breadth">Breadth</button>
+<button id="load">Load on Hanger</button>
+<button id="temp">Temperature</button>
+<button id="stress">Stress Applied</button>
+<button id="extension">Extension</button>
+<button id="time">Time</button>
+<p id="pthick">1.85 mm</p>
+<p id="pbreadth">4.8 mm</p>
+<p id="pload">0.8 kg</p>
+<p id="ptemp">33 C</p>
+<p id="pstress">10.34 Mpa</p>
+<p id="pextension">3*5*10^(-3)mm</p>
+<p id="ptime">0 mins</p>
+  </div>
+	 <p id="mp"> <u>CREEP TEST EXPERIMENT</u></p>
+	
+	<div id="outline">
+  <div id="v1"></div>
+  <div id="v2"></div>
+  <div id="v3"></div>
+  <div id="l1"></div>
+  <div id="l2"></div> 
+  <div id="l3"></div>
+  	</div>
+  
+  </body></html>
