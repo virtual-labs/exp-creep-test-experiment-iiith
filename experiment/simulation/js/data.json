@@ -1,0 +1,11 @@
+data = {
+    "colors": {
+        "strokestyle": "black",
+        "circlefill": "black",
+        "stand": "#176696",
+        "bench": "#643D01",
+        "hook": "grey",
+        "rod": "grey",
+        "box": "brown"
+    }
+}

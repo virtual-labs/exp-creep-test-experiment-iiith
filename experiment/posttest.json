@@ -1,0 +1,32 @@
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "Above what temperature is the phenomenon of creep important in steel?",
+            "answers": {
+                "a": "200 °C",
+                "b": "500 °C",
+                "c": "300 °C",
+                "d": "600 °C"
+            },
+            "explanations": {
+                "c": "For steel, the phenomenon of creep is important at a temperature above 300 °C while in polymer it is significant at room temperature."
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Which of the following factors is inversely proportional to the magnitude of creep?",
+            "answers": {
+                "a": "Temparature",
+                "b": "Time",
+                "c": "Grain Size",
+                "d": "Stress"
+            },
+            "explanations": {
+                "c": "With a decrease in grain size, magnitude of creep increases. It is because grain boundaries become weak at elevated temperatures and start to slide. With an increase in temperature, time and stress creep increases."
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        }
+    ]
+}
