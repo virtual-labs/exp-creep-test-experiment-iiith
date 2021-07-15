@@ -1,0 +1,29 @@
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "Time dependent permanent deformation is called ________________.",
+            "answers": {
+                "a": "Plastic deformation",
+                "b": "Elastic deformation",
+                "c": "Creep",
+                "d": "Anelastic deformation"
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "Creep is a ____ dependent phenomenon.",
+            "answers": {
+                "a": "Temperature",
+                "b": "Time",
+                "c": "Load",
+                "d": "Stress cycle"
+            },
+            "explanations": {
+                "b": "Creep occurs at all temperatures. This deformation occurs at constant stress. It is a time-dependent phenomenon."
+            },
+            "correctAnswer": "b",
+            "difficulty": "intermediate"
+        }
+    ]
+}

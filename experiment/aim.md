@@ -6,6 +6,5 @@ Creep is defined as the long term deformation of a member due to the sustained l
 
 To inspect the property of creep in metals (lead in this experiment). 
 
-<a href="docs/Exp-6-Creep-test.pdf">read more</a>
 
 
