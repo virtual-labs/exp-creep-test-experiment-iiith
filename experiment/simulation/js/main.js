@@ -226,6 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
             updateChart();
         } else {
             connectPoints(standX + 1.5 * gap, standY + standHt1 / 2, standX + 1.5 * gap, standY + standHt1 - standHt2, 6, "white");
+            pauseButton.setAttribute("disabled", "true");
         }
     }
 
