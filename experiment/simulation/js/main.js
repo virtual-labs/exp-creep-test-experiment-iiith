@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const timec = [0.25, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00, 2.25, 2.50, 2.75, 3.00, 3.50, 4.00, 4.25, 4.50, 4.75, 5.00, 5.25, 5.50, 5.75, 6.00, 6.25, 6.50, 6.75, 7.00];
 
     const restartButton = document.getElementById('restart');
-    restartButton.addEventListener('click', function() { restart(); });
+    restartButton.addEventListener('click', restart);
 
     const playButton = document.getElementById('play');
-    playButton.addEventListener('click', function() { play(); });
+    playButton.addEventListener('click', play);
 
     const pauseButton = document.getElementById('pause');
-    pauseButton.addEventListener('click', function() { pause(); });
+    pauseButton.addEventListener('click', pause);
 
     const slider = document.getElementById('speed');
     const output = document.getElementById('demo_speed');
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function drawObject(ctx, obj, color) {
         ctx.save();
         ctx.fillStyle = color;
-        ctx.strokeStyle = data.colors.strokestyle;
+        ctx.strokeStyle = data.colors.black;
         ctx.beginPath();
         ctx.moveTo(obj[0][0], obj[0][1]);
 
@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function drawCircle(ctx, x, y, radius, flag) {
         ctx.beginPath();
-        ctx.fillStyle = data.colors.circlefill;
-        ctx.strokeStyle = data.colors.strokestyle;
+        ctx.fillStyle = data.colors.black;
+        ctx.strokeStyle = data.colors.black;
         ctx.lineWidth = 6;
         ctx.arc(x, y, radius, 0, 2 * Math.PI);
         ctx.stroke();
@@ -109,14 +109,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function move(tube, flag) {
-        for (let i = 0; i < tube.length; ++i) {
-            tube[i][1] += flag;
-        }
+        tube.forEach(element => {
+            element[1] += flag;
+        });
     }
 
     let tmHandle;
     let chart;
-    let step = 0;
+    let step;
 
     const canvas = document.getElementById("main");
     canvas.width = 900;
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const standHt3 = 198;
 
     const rodLength = 500;
-    let rodWidth = 60;
+    let rodWidth;
     const rodY = standY - 150;
 
     const boxWidth = 150;
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
         drawObject(ctx, stand, data.colors.stand);
         drawObject(ctx, base, data.colors.bench);
         drawObject(ctx, hook, data.colors.hook);
-        drawObject(ctx, rod, data.colors.rod);
+        drawObject(ctx, rod, data.colors.hook);
         drawObject(ctx, box, data.colors.box);
         drawCircle(ctx, standX + 1.5 * gap, standY + standHt1 + standHt2 / 2, 10, 0);
         drawCircle(ctx, standX + 1.5 * gap, rod[0][1] + rodWidth / 2, 10, 0);

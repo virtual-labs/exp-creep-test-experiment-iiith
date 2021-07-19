@@ -1,7 +1,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "Above what temperature is the phenomenon of creep important in steel?",
+            "question": "1. Above what temperature is the phenomenon of creep important in steel?",
             "answers": {
                 "a": "200 °C",
                 "b": "500 °C",
@@ -15,7 +15,7 @@
             "difficulty": "beginner"
         },
         {
-            "question": "Which of the following factors is inversely proportional to the magnitude of creep?",
+            "question": "2. Which of the following factors is inversely proportional to the magnitude of creep?",
             "answers": {
                 "a": "Temparature",
                 "b": "Time",
