@@ -7,71 +7,93 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
-
-<div class="columns is-centered">
-    <div class="column has-text-centered mt-2">
-        <button id="play" class="v-button">Play</button>
-        <button id="pause" class="v-button" disabled>Pause</button>
-        <button id="restart" class="v-button" disabled>Restart</button>
-    </div>
-</div>
-
-<div class="box">
-    <div class="columns is-centered">
-        <div class="column has-text-centered is-two-fifths">
-            <canvas class="main v-canvas-container" id="main"></canvas>
-            <p>Simulation speed: <span id="demo_speed"></span>x</p>
-            <input type="range" min="1" max="8" value="4" class="slider" id="speed">
-        </div>
-        <div class="column has-text-centered">
-            <div class="v-table-wrap">
-                <table class="table is-bordered is-fullwidth v-table-primary mb-2">
-                    <thead>
-                        <tr>
-                            <th>Thickness</th>
-                            <th>Stress Applied</th>
-                            <th>Load on Hanger</th>
-                            <th>Temperature</th>
-                            <th>Breadth</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1.85 mm</td>
-                            <td>10.34 Mpa</td>
-                            <td>0.8 kg</td>
-                            <td>33<span>&#8451;</span></td>
-                            <td>4.8 mm</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="v-table-wrap">
-                <table class="table is-bordered is-fullwidth v-table-primary mb-2">
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Extension</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="timec">0 mins</td>
-                            <td id="extension">0.0 mm</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div>
-                <div id="chartContainer"></div>
+<body>
+    <div id="box">
+        <div class="columns is-centered is-flex">
+            <div class="column mt-2 is-10-desktop is-10-tablet is-10-mobile has-text-centered">
+                <div class="columns is-mobile is-centered is-flex">
+                    <div id="anime-demo" class="column has-text-centered controls">
+                        <button id="play" class="v-button">Play</button>
+                        <button id="pause" class="v-button" disabled>Pause</button>
+                        <button id="restart" class="v-button" disabled>Restart</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+        <div class="columns is-centered is-variable is-flex is-flex-wrap-wrap workspace">
+            <div id="apparatus" class="column has-text-centered is-3-desktop is-5-tablet is-5-mobile apparatus">
+                <div class="v-datalist-container">
+                    <div class="v-datalist-title" >Input Parameters</div>
+                    
+                    <p>Simulation speed: <span id="demo_speed"></span>x</p>
+                    <input type="range" min="1" max="8" value="4" class="slider" id="speed">
+                    <div class="v-datalist-row" id="obs-table">
+                        <p class="v-bold">Length of Rod = 80 mm</p><br/>
+                        <p class="v-bold">Diameter of Rod = 6 mm</p><br/>
+                        <p class="v-bold"> Thickness = 1.85 mm</p><br/>
+                        <p class="v-bold"> Breadth = 4.8 mm</p><br/>
+                        <p class="v-bold">Polar MOI = 1.272e-10 m<sup>4</sup></p><br/>
+                        <p class="v-bold"> Stress Applied = 10.34 Mpa</p><br/>
+                        <p class="v-bold"> Load on Hanger = 0.8 kg</p><br/>
+                        <p class="v-bold"> Temperature = 33<span>&#8451;</span></p><br/>
+                        <p class="v-bold">Modulus of Rigidity = 29.473 GPa</p><br/>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div  class="column has-text-centered is-3-desktop is-5-tablet is-5-mobile observations">
+                <div class="v-datalist-container ">
+                    <div class="v-datalist-title">Observations</div>
+                        <div class="v-datalist-row" id="obs-table">
+                            <div class="v-table-wrap">
+                                <table class="table is-bordered is-fullwidth v-table-primary mb-2">
+                                    <thead>
+                                        <tr>
+                                            <th>Time (mins)</th>
+                                            <th>Extension (mm)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td id="timec">0</td>
+                                            <td id="extension">0.0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="result"></div>
+                        </div>
+                        <div class="v-datalist-row ">
+                            <div class="v-table-wrap">
+                                <div class="column has-text-centered">
+                                    <div id="chartContainer" class="mt-0"></div>
+                                </div>
+                            </div>         
+                        </div>
+                </div>
+            </div>
 
-<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+            <div class="column has-text-centered is-5-desktop is-10-tablet is-10-mobile simulation" id="container">
+                <div class="v-datalist-container">
+                    <div class="columns">
+                        <div class="column has-text-centered ">
+                            <canvas class="main" id="main"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<script src='https://cdn.plot.ly/plotly-2.2.0.min.js'></script>
 <script src="./js/data.json"></script>
 <script src="./js/main.js"></script>
+
 </body>
 
 </html>
+
+
+
+
