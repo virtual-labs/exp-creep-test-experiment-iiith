@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
             [boxX, boxY + boxHeight],
         ];
 
-        document.getElementById("timec").innerHTML = "0 mins";
-        document.getElementById("extension").innerHTML = "0.0 mm";
+        document.getElementById("timec").innerHTML = "0";
+        document.getElementById("extension").innerHTML = "0.0";
     }
 
     function restart() {
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById("main");
     canvas.width = 900;
     canvas.height = 1200;
-    canvas.style = "border:3px solid;";
+    // canvas.style = "border:3px solid;";
     const ctx = canvas.getContext("2d");
 
     const lineWidth = 1.5;
@@ -261,8 +261,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         y = Number.parseFloat(y).toPrecision(3);
         x = Number.parseFloat(x).toPrecision(3);
-        document.getElementById("timec").innerHTML = x.toString() + "mins";
-        document.getElementById("extension").innerHTML = y.toString() + "mm";
+        document.getElementById("timec").innerHTML = x.toString();
+        document.getElementById("extension").innerHTML = y.toString();
 
         if (step < timec.length) {
             chart[0]['x'].push(x);
