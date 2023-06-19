@@ -1,0 +1,9 @@
+data = {
+    "colors": {
+        "black": "#000000",
+        "stand": "#176696",
+        "bench": "#643D01",
+        "hook": "grey",
+        "box": "brown"
+    }
+}
