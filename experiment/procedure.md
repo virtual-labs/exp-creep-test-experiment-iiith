@@ -1,17 +1,21 @@
-**Procedure**
+### Procedure
 
-1. Thickness of wire is measured and mean value is assumed.
-2. The temparature of the wire system is fixed using the apparatus.
-3. A box is used as a load and its mass and dimensions are measured.
-4. Every minute the extension in the wire is measured and the extension and time values are plotted on a graph.
-5. The resultant graph is the Extension-Time curve which is the property of a material.
+1. Measure the thickness of the wire at several locations and calculate its mean value.
+2. Set the required temperature of the wire system using the apparatus.
+3. Measure the mass and dimensions of the load box.
+4. Measure the extension of the wire at one-minute intervals and record the corresponding time and extension values.
+5. Plot the Extension–Time graph. The resulting graph represents the creep behaviour of the material.
 
-**Virtual Procedure**
-1. Start the Experiment by clicking the play button.
+### Virtual Procedure
+
+1. Start the experiment by clicking the **Play** button.
 2. Observe the extension of the specimen wire in the simulation window.
-3. The value of extension at some intervals are noted.
-4. After a certain time the wire breaks and the final extension is observed.
-5. A graph is plotted between the Extension-Time values observed.
-6. The Experiment allows you to pause/play/restart the simulation to view the values of different parameters at every stage of simulation.
+3. Record the extension values at regular time intervals.
+4. Continue the simulation until the wire breaks and observe the final extension.
+5. Observe the graph plotted between extension and time.
+6. Use the **Pause**, **Play**, and **Restart** controls to view the values of different parameters at various stages of the simulation.
 
-NOTE: There are various features available for the graphs such as zoom, etc. The function/feature of each icon above the graphs becomes visible upon hovering over the concerned icon.
+**Note:**
+
+- For better visualization in the virtual simulation, the specimen is displayed as a thicker rod. In an actual creep test, the specimen is a thin wire (thread-like) of the test material. This visual representation does not affect the experimental principle or the observed creep behaviour.
+- Various interactive graph features, such as zooming and panning, are available. Hover the mouse pointer over the icons above the graph to view the function of each feature.
