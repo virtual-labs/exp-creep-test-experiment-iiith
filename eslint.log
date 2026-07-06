@@ -1,0 +1,17 @@
+
+/home/runner/work/exp-creep-test-experiment-iiith/exp-creep-test-experiment-iiith/experiment/simulation/js/main.js
+   73:27  warning  'data' is not defined            no-undef
+   90:25  warning  'data' is not defined            no-undef
+   91:27  warning  'data' is not defined            no-undef
+  200:32  warning  'data' is not defined            no-undef
+  201:31  warning  'data' is not defined            no-undef
+  202:31  warning  'data' is not defined            no-undef
+  203:30  warning  'data' is not defined            no-undef
+  204:30  warning  'data' is not defined            no-undef
+  252:9   warning  'Plotly' is not defined          no-undef
+  252:24  warning  'chartContainer' is not defined  no-undef
+  270:13  warning  'Plotly' is not defined          no-undef
+  270:27  warning  'chartContainer' is not defined  no-undef
+
+✖ 12 problems (0 errors, 12 warnings)
+

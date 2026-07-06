@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Time-dependent permanent deformation of a material under a constant load is called ____.",
+      "answers": {
+        "a": "Elastic deformation",
+        "b": "Plastic deformation",
+        "c": "Creep",
+        "d": "Fatigue"
+      },
+      "explanations": {
+        "a": "Incorrect. Elastic deformation disappears after the load is removed.",
+        "b": "Incorrect. Plastic deformation occurs when the applied stress exceeds the yield strength but is not necessarily time-dependent.",
+        "c": "Correct. Creep is the gradual, time-dependent permanent deformation of a material under a constant load or stress.",
+        "d": "Incorrect. Fatigue is failure caused by repeated cyclic loading."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Creep is primarily a ____ dependent phenomenon.",
+      "answers": {
+        "a": "Temperature",
+        "b": "Time",
+        "c": "Density",
+        "d": "Colour"
+      },
+      "explanations": {
+        "a": "Incorrect. Temperature influences creep but does not define the phenomenon.",
+        "b": "Correct. Creep is characterised by deformation that increases with time under a constant load.",
+        "c": "Incorrect. Density does not define creep behaviour.",
+        "d": "Incorrect. Colour has no relation to creep."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. In this virtual experiment, the creep behaviour is demonstrated using a ____ specimen.",
+      "answers": {
+        "a": "Steel",
+        "b": "Copper",
+        "c": "Lead",
+        "d": "Aluminium"
+      },
+      "explanations": {
+        "a": "Incorrect. Steel generally exhibits significant creep only at elevated temperatures.",
+        "b": "Incorrect. Copper is not the material used in this experiment.",
+        "c": "Correct. Lead exhibits measurable creep at room temperature and is used in this experiment.",
+        "d": "Incorrect. Aluminium is not the specimen material used here."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. During the creep test, which quantity is kept constant?",
+      "answers": {
+        "a": "Load",
+        "b": "Extension",
+        "c": "Strain",
+        "d": "Length"
+      },
+      "explanations": {
+        "a": "Correct. A constant load is applied while the deformation is observed over time.",
+        "b": "Incorrect. Extension changes during the test.",
+        "c": "Incorrect. Strain increases as creep progresses.",
+        "d": "Incorrect. The specimen length changes due to deformation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which graph is obtained in the creep test performed in this virtual lab?",
+      "answers": {
+        "a": "Stress–Strain",
+        "b": "Load–Extension",
+        "c": "Extension–Time",
+        "d": "Torque–Twist"
+      },
+      "explanations": {
+        "a": "Incorrect. A stress–strain graph is obtained from tensile testing.",
+        "b": "Incorrect. Load–extension is not the graph plotted in this experiment.",
+        "c": "Correct. The creep test records extension with respect to time.",
+        "d": "Incorrect. Torque–twist graphs are obtained from torsion tests."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which property is directly observed during the creep test?",
+      "answers": {
+        "a": "Hardness",
+        "b": "Extension with time",
+        "c": "Impact energy",
+        "d": "Shear stress"
+      },
+      "explanations": {
+        "a": "Incorrect. Hardness is measured using hardness tests.",
+        "b": "Correct. The extension of the specimen is recorded at regular time intervals.",
+        "c": "Incorrect. Impact energy is measured using impact tests.",
+        "d": "Incorrect. Shear stress is not directly measured in this experiment."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. For most engineering metals, creep becomes significant when the operating temperature exceeds approximately ____.",
+      "answers": {
+        "a": "0.1 Tm",
+        "b": "0.2 Tm",
+        "c": "0.4 Tm",
+        "d": "0.9 Tm"
+      },
+      "explanations": {
+        "a": "Incorrect. This temperature is generally too low for significant creep in most metals.",
+        "b": "Incorrect. Creep is usually not significant at this temperature for most metals.",
+        "c": "Correct. Significant creep generally begins above about 0.4 times the absolute melting temperature.",
+        "d": "Incorrect. Creep begins well before this temperature."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which stage of creep is characterised by an approximately constant creep rate?",
+      "answers": {
+        "a": "Primary creep",
+        "b": "Secondary creep",
+        "c": "Tertiary creep",
+        "d": "Elastic stage"
+      },
+      "explanations": {
+        "a": "Incorrect. The creep rate decreases during primary creep.",
+        "b": "Correct. Secondary creep is characterised by a nearly constant creep rate.",
+        "c": "Incorrect. The creep rate accelerates during tertiary creep.",
+        "d": "Incorrect. Elastic deformation is not a stage of creep."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which expression represents engineering strain?",
+      "answers": {
+        "a": "$$\\varepsilon=\\frac{\\Delta L}{L}$$",
+        "b": "$$\\sigma=\\frac{P}{A}$$",
+        "c": "$$E=\\frac{\\sigma}{\\varepsilon}$$",
+        "d": "$$\\tau=\\frac{T}{J}$$"
+      },
+      "explanations": {
+        "a": "Correct. Engineering strain is the ratio of extension to the original gauge length.",
+        "b": "Incorrect. This equation represents normal stress.",
+        "c": "Incorrect. This equation represents Young's modulus.",
+        "d": "Incorrect. This equation is related to torsion."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    }
+  ]
+}

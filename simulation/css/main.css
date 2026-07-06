@@ -1,0 +1,56 @@
+.v-datalist-container {
+  min-height: 44.25rem;
+  height: 80vh;
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: white;
+}
+
+.main {
+  width: 85%;
+  height: 100%;
+  background-color: white;
+}
+
+/*table.table{
+	 background-color: lightblue;
+  height: 40px;
+  width: 200px;
+  overflow-y: scroll;
+}
+*/
+/*#main{
+	margin-top: 20px;
+}*/
+
+#chartContainer{
+	height: 65vh;
+	width: 100% ;
+}
+
+.apparatus {
+	order: 1;
+}
+
+.simulation {
+	order: 2;
+}
+
+.observations {
+	order: 3;
+}
+
+@media screen and (max-width: 1023px) {
+	.apparatus {
+		order: 1;
+	}
+
+	.simulation {
+		order: 3;
+	}
+
+	.observations {
+		order: 2;
+	}
+}

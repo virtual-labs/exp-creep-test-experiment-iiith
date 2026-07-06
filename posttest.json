@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which material is commonly used to demonstrate creep at room temperature in laboratory experiments?",
+      "answers": {
+        "a": "Lead",
+        "b": "Steel",
+        "c": "Cast iron",
+        "d": "Glass"
+      },
+      "explanations": {
+        "a": "Correct. Lead has a low melting temperature and exhibits measurable creep at room temperature.",
+        "b": "Incorrect. Steel generally requires elevated temperatures for significant creep.",
+        "c": "Incorrect. Cast iron is not commonly used for room-temperature creep demonstrations.",
+        "d": "Incorrect. Glass is not the specimen material used in this experiment."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. During the creep test, the extension of the specimen generally ____ with time.",
+      "answers": {
+        "a": "decreases",
+        "b": "remains constant",
+        "c": "increases",
+        "d": "becomes zero"
+      },
+      "explanations": {
+        "a": "Incorrect. Extension does not decrease while the load is maintained.",
+        "b": "Incorrect. The extension changes continuously during creep.",
+        "c": "Correct. The specimen undergoes gradual deformation with time.",
+        "d": "Incorrect. The extension does not become zero during the test."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The graph obtained in the virtual creep experiment is a ____ graph.",
+      "answers": {
+        "a": "Stress–Strain",
+        "b": "Extension–Time",
+        "c": "Torque–Angle",
+        "d": "Load–Deflection"
+      },
+      "explanations": {
+        "a": "Incorrect. This graph is associated with tensile testing.",
+        "b": "Correct. The experiment plots extension against time.",
+        "c": "Incorrect. Torque–angle graphs are obtained from torsion tests.",
+        "d": "Incorrect. Load–deflection is not plotted in this experiment."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which stage of creep has a decreasing creep rate?",
+      "answers": {
+        "a": "Primary creep",
+        "b": "Secondary creep",
+        "c": "Tertiary creep",
+        "d": "Fracture stage"
+      },
+      "explanations": {
+        "a": "Correct. Primary creep is characterised by a gradually decreasing creep rate.",
+        "b": "Incorrect. Secondary creep has an approximately constant creep rate.",
+        "c": "Incorrect. Tertiary creep has an increasing creep rate.",
+        "d": "Incorrect. Fracture is not considered a stage of creep."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Why is lead used in this experiment?",
+      "answers": {
+        "a": "It is the strongest engineering metal.",
+        "b": "It exhibits measurable creep at room temperature.",
+        "c": "It has the highest melting temperature.",
+        "d": "It does not deform under load."
+      },
+      "explanations": {
+        "a": "Incorrect. Strength is not the reason for selecting lead.",
+        "b": "Correct. Lead exhibits measurable creep at room temperature due to its relatively low melting point.",
+        "c": "Incorrect. Lead has a relatively low melting temperature.",
+        "d": "Incorrect. Lead deforms under sustained loading."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which quantity is measured at regular intervals during the creep test?",
+      "answers": {
+        "a": "Extension",
+        "b": "Hardness",
+        "c": "Impact energy",
+        "d": "Torque"
+      },
+      "explanations": {
+        "a": "Correct. Extension is measured periodically to study creep behaviour.",
+        "b": "Incorrect. Hardness is not measured during the creep test.",
+        "c": "Incorrect. Impact energy is measured in impact testing.",
+        "d": "Incorrect. Torque is measured in torsion testing."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. The slope of the strain–time curve at any point represents the ____.",
+      "answers": {
+        "a": "Young's modulus",
+        "b": "Creep rate",
+        "c": "Yield strength",
+        "d": "Poisson's ratio"
+      },
+      "explanations": {
+        "a": "Incorrect. Young's modulus is determined from the stress–strain curve.",
+        "b": "Correct. The slope of the strain–time curve represents the creep rate.",
+        "c": "Incorrect. Yield strength is not determined from the creep curve.",
+        "d": "Incorrect. Poisson's ratio is not obtained from this graph."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which stage of creep is generally used for engineering design because of its nearly constant creep rate?",
+      "answers": {
+        "a": "Elastic stage",
+        "b": "Primary creep",
+        "c": "Secondary creep",
+        "d": "Tertiary creep"
+      },
+      "explanations": {
+        "a": "Incorrect. Elastic deformation is not a creep stage.",
+        "b": "Incorrect. The creep rate decreases during primary creep.",
+        "c": "Correct. Secondary creep has a nearly constant creep rate and is commonly used in design.",
+        "d": "Incorrect. Tertiary creep leads to rapid failure."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Creep analysis is most important for components subjected to ____.",
+      "answers": {
+        "a": "Short-duration impact loads",
+        "b": "Repeated cyclic loads",
+        "c": "Sustained loading over long periods",
+        "d": "Magnetic loading"
+      },
+      "explanations": {
+        "a": "Incorrect. Impact loading is evaluated using impact tests.",
+        "b": "Incorrect. Cyclic loading is associated with fatigue.",
+        "c": "Correct. Creep analysis predicts long-term deformation under sustained loading.",
+        "d": "Incorrect. Magnetic loading is unrelated to creep."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    }
+  ]
+}
